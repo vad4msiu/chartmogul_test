@@ -6,8 +6,15 @@ ruby '~> 2.6'
 
 gem 'money'
 gem 'slop'
+gem 'chartmogul-ruby', require: 'chartmogul'
+
+gem 'pry'
 
 group :development, :test do
   gem 'rspec'
-  gem 'pry'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
 end

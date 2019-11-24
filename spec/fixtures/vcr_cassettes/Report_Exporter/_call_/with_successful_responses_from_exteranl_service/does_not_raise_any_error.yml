@@ -1,0 +1,500 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chartmogul.com/v1/customers?external_id=petr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"entries":[],"current_page":1,"total_pages":1,"has_more":false,"per_page":200,"page":1}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:49 GMT
+- request:
+    method: post
+    uri: https://api.chartmogul.com/v1/customers
+    body:
+      encoding: UTF-8
+      string: '{"external_id":"petr","name":"petr","data_source_uuid":"ds_07c64243-0d2d-11ea-b71e-8b59b4caa517"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '729'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"id":31975901,"uuid":"cus_c85ca328-0edd-11ea-b72a-63a2b8cf511f","external_id":"petr","name":"petr","email":"","status":"Lead","customer-since":null,"attributes":{"custom":{},"clearbit":{},"stripe":{},"tags":[]},"data_source_uuid":"ds_07c64243-0d2d-11ea-b71e-8b59b4caa517","data_source_uuids":["ds_07c64243-0d2d-11ea-b71e-8b59b4caa517"],"external_ids":["petr"],"company":"","country":null,"state":null,"city":"","zip":null,"lead_created_at":null,"free_trial_started_at":null,"address":{"country":null,"state":null,"city":"","address_zip":null},"mrr":0,"arr":0,"billing-system-url":null,"chartmogul-url":"https://app.chartmogul.com/#customers/31975901-petr","billing-system-type":"Import
+        API","currency":"USD","currency-sign":"$"}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:50 GMT
+- request:
+    method: get
+    uri: https://api.chartmogul.com/v1/customers?external_id=hassan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"entries":[],"current_page":1,"total_pages":1,"has_more":false,"per_page":200,"page":1}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:50 GMT
+- request:
+    method: post
+    uri: https://api.chartmogul.com/v1/customers
+    body:
+      encoding: UTF-8
+      string: '{"external_id":"hassan","name":"hassan","data_source_uuid":"ds_07c64243-0d2d-11ea-b71e-8b59b4caa517"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '737'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"id":31975902,"uuid":"cus_c85ca329-0edd-11ea-b72a-a73a30025eb4","external_id":"hassan","name":"hassan","email":"","status":"Lead","customer-since":null,"attributes":{"custom":{},"clearbit":{},"stripe":{},"tags":[]},"data_source_uuid":"ds_07c64243-0d2d-11ea-b71e-8b59b4caa517","data_source_uuids":["ds_07c64243-0d2d-11ea-b71e-8b59b4caa517"],"external_ids":["hassan"],"company":"","country":null,"state":null,"city":"","zip":null,"lead_created_at":null,"free_trial_started_at":null,"address":{"country":null,"state":null,"city":"","address_zip":null},"mrr":0,"arr":0,"billing-system-url":null,"chartmogul-url":"https://app.chartmogul.com/#customers/31975902-hassan","billing-system-type":"Import
+        API","currency":"USD","currency-sign":"$"}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:51 GMT
+- request:
+    method: get
+    uri: https://api.chartmogul.com/v1/plans?external_id=monthly_plan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"19c8bbc1cf5efc34f9f2b60da7c37d91"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5d2a7531-a231-43d6-9df0-87a803ec213b
+      X-Runtime:
+      - '0.034821'
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"plans":[],"current_page":1,"total_pages":0}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:51 GMT
+- request:
+    method: post
+    uri: https://api.chartmogul.com/v1/plans
+    body:
+      encoding: UTF-8
+      string: '{"name":"monthly_plan","interval_count":1,"interval_unit":"month","external_id":"monthly_plan","data_source_uuid":"ds_07c64243-0d2d-11ea-b71e-8b59b4caa517"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"70cb137d9111b31ca469f2205a7f8ec3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c6a47340-4194-41e1-a517-0d699fbd84f8
+      X-Runtime:
+      - '0.119852'
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: '{"external_id":"monthly_plan","name":"monthly_plan","interval_count":1,"interval_unit":"month","data_source_uuid":"ds_07c64243-0d2d-11ea-b71e-8b59b4caa517","uuid":"pl_c94f0c63-0edd-11ea-b72a-175501350077"}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:52 GMT
+- request:
+    method: get
+    uri: https://api.chartmogul.com/v1/invoices?customer_uuid=cus_c85ca328-0edd-11ea-b72a-63a2b8cf511f&external_id=8d5db3584313ed3cdca0664c0ed727ca
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"07b0ce050175d3bd39e999858f06cdc7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 79962bb5-f7c0-4dec-90fe-c9b77cec4ce7
+      X-Runtime:
+      - '0.112591'
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"invoices":[],"total_pages":0,"current_page":1}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:52 GMT
+- request:
+    method: post
+    uri: https://api.chartmogul.com/v1/import/customers/cus_c85ca328-0edd-11ea-b72a-63a2b8cf511f/invoices
+    body:
+      encoding: UTF-8
+      string: '{"invoices":[{"date":"2019-11-24","currency":"USD","line_items":[{"type":"subscription","subscription_external_id":"subs","service_period_start":"2018-01-02T13:15:10Z","service_period_end":"2018-02-02T13:15:10Z","amount_in_cents":1000,"quantity":1,"tax_amount_in_cents":210,"plan_uuid":"pl_c94f0c63-0edd-11ea-b72a-175501350077"}],"external_id":"8d5db3584313ed3cdca0664c0ed727ca"}],"customer_uuid":"cus_c85ca328-0edd-11ea-b72a-63a2b8cf511f"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"a8dfbf1dbc6d3aad15fc9c4685b2c491"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c3843840-803f-480a-b644-acd9ecf61ad8
+      X-Runtime:
+      - '0.362782'
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: '{"invoices":[{"uuid":"inv_60d08594-3e92-4642-8b4d-a2288af10432","external_id":"8d5db3584313ed3cdca0664c0ed727ca","date":"2019-11-24T00:00:00.000Z","due_date":null,"currency":"USD","line_items":[{"uuid":"li_772e72e7-8faa-4b61-8ddb-bc34de170a9a","external_id":null,"type":"subscription","subscription_uuid":"sub_4bc86f05-aa1d-458a-9e8d-56002021634f","subscription_external_id":"subs","prorated":false,"service_period_start":"2018-01-02T13:15:10.000Z","service_period_end":"2018-02-02T13:15:10.000Z","amount_in_cents":1000,"quantity":1,"plan_uuid":"pl_c94f0c63-0edd-11ea-b72a-175501350077","discount_code":"","discount_amount_in_cents":0,"tax_amount_in_cents":210,"transaction_fees_in_cents":0,"account_code":""}],"transactions":[]}]}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:54 GMT
+- request:
+    method: get
+    uri: https://api.chartmogul.com/v1/invoices?customer_uuid=cus_c85ca329-0edd-11ea-b72a-a73a30025eb4&external_id=2abdd4e1d368619d8d6615fe5aa05fe2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"07b0ce050175d3bd39e999858f06cdc7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4de3d0e3-f5ee-41c9-80bb-aeb0b080b418
+      X-Runtime:
+      - '0.108299'
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"invoices":[],"total_pages":0,"current_page":1}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:55 GMT
+- request:
+    method: post
+    uri: https://api.chartmogul.com/v1/import/customers/cus_c85ca329-0edd-11ea-b72a-a73a30025eb4/invoices
+    body:
+      encoding: UTF-8
+      string: '{"invoices":[{"date":"2019-11-24","currency":"USD","line_items":[{"type":"subscription","subscription_external_id":"subs2","service_period_start":"2018-01-02T14:10:00Z","service_period_end":"2018-02-02T14:10:00Z","amount_in_cents":1000,"quantity":1,"tax_amount_in_cents":210,"plan_uuid":"pl_c94f0c63-0edd-11ea-b72a-175501350077"}],"external_id":"2abdd4e1d368619d8d6615fe5aa05fe2"}],"customer_uuid":"cus_c85ca329-0edd-11ea-b72a-a73a30025eb4"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OWRiNzRjNjk3NzIzMDFhOTNhYjA4ZDA0YTA5ZGExNWE6YzQ5MzBjYjBlN2Q2YjJhM2ExYTUzNTYyOTBlYzE2ZmY=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 24 Nov 2019 17:13:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d9b36b07da9aa035742a8ea9a026f80c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 97be1ca5-62b0-40ac-ba4d-85a83527602c
+      X-Runtime:
+      - '0.303700'
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: '{"invoices":[{"uuid":"inv_ec12b163-9f8b-4be6-9b9d-4a1bdbb184c0","external_id":"2abdd4e1d368619d8d6615fe5aa05fe2","date":"2019-11-24T00:00:00.000Z","due_date":null,"currency":"USD","line_items":[{"uuid":"li_030a39d9-df69-49b8-b2ba-3e3e278c73f9","external_id":null,"type":"subscription","subscription_uuid":"sub_3d0bedfd-992e-4ff3-8c8e-4e14dcd42522","subscription_external_id":"subs2","prorated":false,"service_period_start":"2018-01-02T14:10:00.000Z","service_period_end":"2018-02-02T14:10:00.000Z","amount_in_cents":1000,"quantity":1,"plan_uuid":"pl_c94f0c63-0edd-11ea-b72a-175501350077","discount_code":"","discount_amount_in_cents":0,"tax_amount_in_cents":210,"transaction_fees_in_cents":0,"account_code":""}],"transactions":[]}]}'
+    http_version: 
+  recorded_at: Sun, 24 Nov 2019 17:13:56 GMT
+recorded_with: VCR 5.0.0

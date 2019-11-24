@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/chartmogul_test'
+
+DEFAULT_ACCOUNT_TOKEN = '9db74c69772301a93ab08d04a09da15a'
+DEFAULT_SECRET_KEY = 'c4930cb0e7d6b2a3a1a5356290ec16ff'
+DEFAULT_DATA_SOURCE_UUID = 'ds_07c64243-0d2d-11ea-b71e-8b59b4caa517'
+
+args = Slop.parse do |o|
+  o.string '--account-token', ' ChartMogul account token', default: DEFAULT_ACCOUNT_TOKEN
+  o.string '--secret-key', 'ChartMogul secret key', default: DEFAULT_SECRET_KEY
+  o.string '--data-source-uuid', 'ChartMogul data source uuid', default: DEFAULT_DATA_SOURCE_UUID
+  o.string '--report-dir', 'Path to the CSV report directory', required: true
+  o.banner = "usage: runner --account-token <TOKEN> --secret-key <KEY> --data-source-uuid <UUID> --report-dir <DIR>"
+  o.on '-h', '--help' do
+    puts o
+    exit
+  end
+end
+
+ChartMogul.account_token = args[:account_token]
+ChartMogul.secret_key = args[:secret_key]
+ChartMogul.max_retries = 0
+
+report_dir = Pathname.new(args[:report_dir]).join('**', '*.csv')
+reports = Dir[report_dir].map { |report_path| Report.load(report_path) }
+full_report = reports.inject(&:+)
+
+Report::Exporter.new(
+  report: full_report,
+  data_source_uuid: args[:data_source_uuid],
+).call!
+
+puts 'Reports were successfully exported'

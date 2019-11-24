@@ -1,41 +1,36 @@
-## Instalation
+## Installation
 ```
 bundle install
 ```
 
-## Usage
+## Run
 ```
-./bin/runner -h
-usage: runner --data FILE_PATH --order FILE_PATH
-    --data      JSON with product information
-    --order     JSON with order information
-    -h, --help
-```
-## Example
-```
-./bin/runner --data spec/fixtures/data.json --order spec/fixtures/order.json
-10 VS5 $17.98
-  2 x 5 $8.99
-14 MB11 $54.80
-  1 x 8 $24.95
-  3 x 2 $9.95
-13 CF $25.85
-  2 x 5 $9.95
-  1 x 3 $5.95
+./bin/exporter --report-dir examples
 ```
 
-## About
-This is a problem known as knapsack problem https://en.wikipedia.org/wiki/Knapsack_problem. One of the possible solutions is using dynamic programming. The main algorithm was borrowed from the Internet and tested.
-
-## Assumption
-If there no possible packs for order it will raise an error. For example:
-
-| Name | Code | Packs |
-| --- | --- | --- |
-| Vegemite Scroll | VS5 | 3 @ $6.99 </br> 5 @ $8.99 |
-
-And order
+## Tests
 ```
-2 VS5
+bundle exec rspec
 ```
-will raise an error `impossible to pack 2 'Vegemite Scroll'`
+
+### Task 1
+The number will be any greater or equal than 100. It happens because operator `select` take the random ready channel and it can be `ticker.C` few times until `select` does not choose `stopCh`. To fix it we can prioritise `select` splitting it on two and use `default` case:
+```
+select {
+    case <-stopCh:
+        return
+    default:
+}
+select {
+    case <-ticker.C:
+}
+```
+
+### Task 2
+I suggest changing the type of `uuid` column from `text` to `uuid` type and create indexes for `external_id`, `uuid`, `another_id`. The last one require because when there will be cascade deleting then it will scan the table for searching `another_id`.
+
+### Task 3
+
+When we use some external API we need to worry about several things. First, it's a rate limit and pool of connections. Second, it's response errors.
+
+With parallel importing, there can be a problem with sending the same request on create/retrieve customers and plans. There can be a performance problem and also a race condition problem. To avoid this we can use a runner with shared memory and mutex for updating this memory from workers. There can be also another solution and it really depends on how many reports we would like to import.

@@ -1,0 +1,6 @@
+Customer ID,Subscription ID,Amount,Tax,Currency,Period Start,Period End,Plan ID,Duration
+petr,subs,10.00,2.10,USD,2018-01-02T13:15:10Z,2018-02-02T13:15:10Z,monthly_plan,1 month
+petr,subs,10.00,2.10,USD,2018-01-02T13:15:10Z,2018-02-02T13:15:10Z,monthly_plan,1 month
+petr,subs,10.00,2.10,USD,2018-01-02T13:15:10Z,2018-02-02T13:15:10Z,monthly_plan,1 month
+hassan,subs2,10.00,2.10,USD,2018-01-02T14:10:00Z,2018-02-02T14:10:00Z,monthly_plan,1 month
+hassan,subs2,10.00,2.10,USD,2018-01-02T14:10:00Z,2018-02-02T14:10:00Z,monthly_plan,1 month
